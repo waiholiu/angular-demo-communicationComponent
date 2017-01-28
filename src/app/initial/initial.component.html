@@ -18,4 +18,6 @@
 
 </p>
 
-<app-child [parentvar]="childInput"> </app-child>
+<app-child [parentvar]="childInput" (onClicked)="onChildClicked($event)"> </app-child>
+
+<p> {{msgFromChild}}</p>

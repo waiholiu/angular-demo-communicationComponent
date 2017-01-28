@@ -10,21 +10,28 @@ export class InitialComponent implements OnInit {
   constructor() { }
 
   isDisabled: boolean = true;
-  btnIconName : string = "add";
+  btnIconName: string = "add";
 
-  childInput : string = "var1";
+  childInput: string = "var1";
+  msgFromChild: string = "nothing";
+
   toggleDisable() {
 
     this.isDisabled = !this.isDisabled;
-    if (this.btnIconName   == "add") {
-      this.btnIconName   = "remove circle";
+    if (this.btnIconName == "add") {
+      this.btnIconName = "remove circle";
     }
     else {
-      this.btnIconName   = "add";
+      this.btnIconName = "add";
     }
   }
 
   ngOnInit() {
+  }
+
+  onChildClicked(value) {
+    this.msgFromChild = value;
+
   }
 
 }
