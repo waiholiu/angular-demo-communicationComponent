@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChildComponent } from './../child/child.component';
 
 @Component({
   selector: 'app-initial',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InitialComponent implements OnInit {
 
+  @ViewChild(ChildComponent)
+    private childComponent: ChildComponent;
+
   constructor() { }
+
+
 
   isDisabled: boolean = true;
   btnIconName: string = "add";
@@ -29,8 +35,9 @@ export class InitialComponent implements OnInit {
   ngOnInit() {
   }
 
+
   onChildClicked(value) {
-    this.msgFromChild = value;
+    this.childComponent.displayMessageFromParent("hello2");
 
   }
 

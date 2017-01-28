@@ -12,11 +12,18 @@ export class ChildComponent implements OnInit {
   @Input() parentvar: string;
   @Output() onClicked = new EventEmitter<string>();
 
+  msgFromParent : string;
+
   ngOnInit() {
     console.log(this.parentvar);
     this.exposedProp = "hello";
   }
   exposedProp: string;
+
+  displayMessageFromParent(value){
+
+      this.msgFromParent = value;
+  }
 
   sendMsgToParent() {
     console.log("sending msg to parent");
