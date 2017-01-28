@@ -1,19 +1,21 @@
 <p>
-  initial works!
+    initial works!
 
-  <a [routerLink]="['/dest/4']">Go to the destination page</a>
+    <a [routerLink]="['/dest/4']">Go to the destination page</a>
 </p>
 
 <p>
 
-<button md-raised-button>RAISED</button>
+    <button md-raised-button>RAISED</button>
 
-<button md-mini-fab color="primary" (click)="toggleDisable()" > 
+    <button md-mini-fab color="primary" (click)="toggleDisable()"> 
     <md-icon class="md-24">{{btnIconName}}</md-icon>
-</button>
+    </button>
 
-<button md-mini-fab color="primary" [disabled]="isDisabled">
+    <button md-mini-fab color="primary" [disabled]="isDisabled">
     <md-icon class="md-24">add</md-icon>
 </button>
 
 </p>
+
+<app-child></app-child>

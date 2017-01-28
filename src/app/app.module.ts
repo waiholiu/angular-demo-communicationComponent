@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { InitialComponent } from './initial/initial.component';
 import { DestinationComponent } from './destination/destination.component';
 import { MaterialModule } from '@angular/material';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitialComponent,
-    DestinationComponent
+    DestinationComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
