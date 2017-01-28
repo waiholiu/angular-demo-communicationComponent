@@ -6,7 +6,7 @@
 
 <p>
 
-    <button md-raised-button>RAISED</button>
+    <button md-raised-button (click)="child.sendMsgToParent()" >RAISED</button>
 
     <button md-mini-fab color="primary" (click)="toggleDisable()"> 
     <md-icon class="md-24">{{btnIconName}}</md-icon>
@@ -18,6 +18,6 @@
 
 </p>
 
-<app-child [parentvar]="childInput" (onClicked)="onChildClicked($event)"> </app-child>
+<app-child #child [parentvar]="childInput" (onClicked)="onChildClicked($event)"> </app-child>
 
 <p> {{msgFromChild}}</p>

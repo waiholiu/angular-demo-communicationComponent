@@ -17,6 +17,7 @@ export class ChildComponent implements OnInit {
   }
 
   sendMsgToParent() {
+    console.log("sending msg to parent");
     this.onClicked.emit("message from child" + new Date().toTimeString());
 
   }
