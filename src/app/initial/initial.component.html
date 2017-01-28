@@ -4,10 +4,12 @@
     <a [routerLink]="['/dest/4']">Go to the destination page</a>
 </p>
 
+<p>child value : {{child.exposedProp}}</p>
+
 <p>
 
     <button md-raised-button (click)="child.sendMsgToParent()" >RAISED</button>
-
+    
     <button md-mini-fab color="primary" (click)="toggleDisable()"> 
     <md-icon class="md-24">{{btnIconName}}</md-icon>
     </button>

@@ -14,7 +14,9 @@ export class ChildComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.parentvar);
+    this.exposedProp = "hello";
   }
+  exposedProp: string;
 
   sendMsgToParent() {
     console.log("sending msg to parent");
