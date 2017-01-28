@@ -25,7 +25,7 @@ export class DestinationComponent implements OnInit {
       const id = params['id'];
       this.id = id;
       let addOne = Number(this.id) + 1;
-      console.log(addOne);
+
       this.addOne = String(addOne);
     });
 

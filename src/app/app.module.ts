@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InitialComponent } from './initial/initial.component';
 import { DestinationComponent } from './destination/destination.component';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DestinationComponent } from './destination/destination.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

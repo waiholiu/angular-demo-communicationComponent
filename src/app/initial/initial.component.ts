@@ -9,6 +9,20 @@ export class InitialComponent implements OnInit {
 
   constructor() { }
 
+  isDisabled: boolean = true;
+  btnIconName : string = "add";
+
+  toggleDisable() {
+
+    this.isDisabled = !this.isDisabled;
+    if (this.btnIconName   == "add") {
+      this.btnIconName   = "remove circle";
+    }
+    else {
+      this.btnIconName   = "add";
+    }
+  }
+
   ngOnInit() {
   }
 
