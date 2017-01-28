@@ -12,6 +12,7 @@ export class InitialComponent implements OnInit {
   isDisabled: boolean = true;
   btnIconName : string = "add";
 
+  childInput : string = "var1";
   toggleDisable() {
 
     this.isDisabled = !this.isDisabled;
