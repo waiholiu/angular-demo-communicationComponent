@@ -1,0 +1,1 @@
+purpose - to demonstrate how components can communicate with each other
